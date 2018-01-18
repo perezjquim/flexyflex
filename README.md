@@ -1,9 +1,10 @@
 # FLEXYFLEX
 
-## Implementação de um menu em JavaScript/Node.js cujo funcionamento seja fácil de manusear 
+## Flexible JavaScript/Nodejs menu for general purposes
 
-A inclusão de novas opções/funcionalidades do menu são facilmente incluídas (até mesmo outros submenus).
-Para além disso, também é facilmente alterado tanto o layout como os nomes de cada menu.
+Facilitates the inclusion of new options for a menu. 
+You just have to write it in the menus.js and fill a certain array with more options.
+The general layout of the menus and the output messages can also be easily altered by changing the configuration files - messages.conf and layout.conf.
 
 ## Screenshot
 <img src="http://imgur.com/ufObr5Wl.png" />

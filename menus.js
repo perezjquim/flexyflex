@@ -1,14 +1,19 @@
-/** BIBLIOTECAS **/
+/*******************************/
+/** IMPORTED LIBRARIES **/
+/*******************************/
 const io = require("./io.js");
-/*********************/
+/*******************************/
 
-module.exports.principal =
+/**************************************/
+/** MENUS AVAILABLE FOR USE **/
+/**************************************/
+module.exports.main =
 [ 
 	{
-		label: "Geração de um número aleatório",
+		label: "Random number generator",
 		action: () =>
 		{
-			io.out("Número aleatório: "+Math.random());
+			io.out("Random number generated: "+Math.random());
 		}
 	},
 	{
@@ -17,38 +22,37 @@ module.exports.principal =
 		{
 			const high = 5;
 			const low = 1;		
-			io.out("O objetivo é acertar num número determinado aleatoriamente entre " + low + " e " + high);
+			io.out("The objective of this game is to guess a number that's between " + low + " and " + high);
 
 			var solution = Math.floor(Math.random() * (high - low) + low);
 			
-			while(io.getin("Introduza um número entre 1 e 5: ") != solution);
+			while(io.getin("Pick a number between " + low + " and " + high + ": ") != solution);
 			
-			io.out("Acertaste!");
+			io.out("YOU GOT IT!");
 		}
 	},
 	{
-		label: "Diálogo com um bot",
+		label: "Small talk with a dumb bot",
 		action: () =>
 		{
 			io.menu("BOT",bot);
 		}
 	} 
 ];
-
 module.exports.bot =
 [
 	{
-		label: "Olá",
+		label: "Hi",
 		action: () =>
 		{
-			io.out("Olá bebé");
+			io.out("Hi babe");
 		}
 	},
 	{
-		label: "Oi",
+		label: "Hola",
 		action: () =>
 		{
-			io.out("Oi, tb?");
+			io.out("Hola, como estas?");
 		}
 	},
 	{
@@ -59,3 +63,4 @@ module.exports.bot =
 		}
 	}
 ];
+/**************************************/
