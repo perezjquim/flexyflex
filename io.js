@@ -5,14 +5,14 @@ const layout = require('./layout.conf');
 /** I/O GERAL **/
 function clear()
 {
-	for(var i = 0; i < 20; i++)
+	for(var i = 0; i < layout.clear_size; i++)
 		out("\n");
 }
 function getin(message)
 {
 	return input.question(message);
 }
-function pause(isInvalid)
+function pause()
 {
 	getin(msg.pause);
 }	
@@ -57,16 +57,15 @@ function ask(name,options)
 				return;
 			default:
 				options[opc-1]["action"]();
-				pause();
 				break;
 		}
 	}
 	else
 	{	
 		out(msg.invalid+"\n");
-		pause();
 	}
 	
+	pause();
 	menu(name,options);
 }
 
