@@ -4,7 +4,7 @@
 
 Facilitates the inclusion of new options (including a menu itself) for a menu. 
 You just have to write it in the menus.js and fill a certain array with more options.
-The general layout of the menus and the output messages can also be easily altered by changing the configuration files - <u>messages.conf</u> and <u>layout.conf</u>.
+The general layout of the menus and the output messages can also be easily altered by changing the configuration files - <small>messages.conf</small> and <small>layout.conf</small>.
 
 ## Screenshots
 <img src="http://imgur.com/i9ta5qLl.png" />
