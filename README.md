@@ -4,7 +4,5 @@
 
 ## Exemplo
 
-<a href="http://i.imgur.com/ufObr5W.png">
-  <img src="http://imgur.com/ufObr5Wl.png" />
-</a>
+<img src="http://imgur.com/ufObr5Wl.png" />
 
