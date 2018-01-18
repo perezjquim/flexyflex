@@ -1,31 +1,36 @@
 const input = require('readline-sync');
-const msg = require('./msg.js');
+const msg = require('./messages.conf');
+const layout = require('./layout.conf');
 
-/** CLEAR **/
+/** I/O GERAL **/
 function clear()
 {
 	for(var i = 0; i < 20; i++)
 		out("\n");
 }
-/************/
-	
-/** OUT **/
+function getin(message)
+{
+	return input.question(message);
+}
+function pause(isInvalid)
+{
+	getin(msg.pause);
+}	
 function out(s) { console.log(s); }
-/**********/	
-	
+/************/
+
 /** MENU **/
-const pattern = "▣";
-const size = 20;
+
 function menu(name,options)
 {
 	clear();
 	
-	var header = pattern.repeat(size) + " " + name + " " + pattern.repeat(size);
+	var header = layout.pattern.repeat(layout.size) + " " + name + " " + layout.pattern.repeat(layout.size);
 	out(header);
 	
 	showOptions(options);
 	
-	var footer = pattern.repeat(2*size+2+name.length);
+	var footer = layout.pattern.repeat(2*layout.size+2+name.length);
 	out(footer);
 
 	ask(name,options);
@@ -39,14 +44,7 @@ function showOptions(options)
 	{ out(i + ") " + options[i-1]["label"]); }
 	out("0) "+msg.exit);
 }
-function getin(message)
-{
-	return input.question(message);
-}
-function pause(isInvalid)
-{
-	getin(msg.pause);
-}	
+
 function ask(name,options)
 {
 	var opc = Number(getin(msg.ask));
