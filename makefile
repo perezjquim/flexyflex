@@ -7,5 +7,5 @@ update:
 
 repackage:
 	@echo "@Repackaging...@"
-	@dpkg-deb --build flexyflex-deb flexyflex-install > /dev/null
+	@dpkg-deb --build flexyflex-deb flexyflex-install.deb > /dev/null
 	@echo "@Repackaged!@"
