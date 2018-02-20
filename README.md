@@ -2,7 +2,7 @@
 
 ## Flexible JavaScript/Nodejs menu for general purposes
 
-Facilitates the inclusion of new options (including a menu itself) for a menu. 
+Facilitates the inclusion of new options (including a menu itself) for a menu.
 To create a new menu, you just have to create an array for the new menu in <i>menus.js</i> and fill it up with its options.
 To change the output messages and the layout general configuration, you just have to tweak the configuration files - <i>messages.conf</i> and <i>layout.conf</i>.
 
@@ -11,4 +11,4 @@ To change the output messages and the layout general configuration, you just hav
 <img src="http://imgur.com/sXeURVKl.png" />
 <img src="http://imgur.com/Y7dA4tfl.png" />
 
-## <a href="https://github.com/perezjquim/flexyflex/archive/master.zip"> DOWNLOAD </a>
+## <a href="https://github.com/perezjquim/flexyflex/raw/master/flexyflex.deb"> DOWNLOAD </a> (.deb)
