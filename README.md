@@ -7,8 +7,8 @@ To create a new menu, you just have to create an array for the new menu in <i>me
 To change the output messages and the layout general configuration, you just have to tweak the configuration files - <i>messages.conf</i> and <i>layout.conf</i>.
 
 ## Screenshots
-<img src="http://imgur.com/i9ta5qLl.png" />
-<img src="http://imgur.com/sXeURVKl.png" />
-<img src="http://imgur.com/Y7dA4tfl.png" />
+<img src="https://imgur.com/i9ta5qLl.png" />
+<img src="https://imgur.com/sXeURVKl.png" />
+<img src="https://imgur.com/Y7dA4tfl.png" />
 
 ## <a href="https://github.com/perezjquim/flexyflex/raw/master/flexyflex-install.deb"> DOWNLOAD </a> (.deb)
